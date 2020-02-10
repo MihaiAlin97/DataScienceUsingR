@@ -234,9 +234,9 @@ print(system.time(table(dieRollsChar)))
 ## rather than trying to directly fill the levels with elements from vector )
 ##the same thing I thing is going on with chars -> the fastest way is with factors directly
 ##each of the calls spent ~0.05 seconds at kernel level(0.06 vector,0.05 factors and 0.04 chars)
-print(system.time(dump("Part1/dieRolls", "dieRolls.R")))
-print(system.time(dump("Part1/dieRollsFactor", "dieRollsFactor.R")))
-print(system.time(dump("Part1/dieRollsChar", "dieRollsChar.R")))
+print(system.time(dump("dieRolls", "Part2/dieRolls.R")))
+print(system.time(dump("dieRollsFactor", "Part2/dieRollsFactor.R")))
+print(system.time(dump("dieRollsChar", "Part2/dieRollsChar.R")))
 ##PROBLEM5 - Advantages of factors over numeric and char vectors
 
 
