@@ -7,7 +7,7 @@
 
 ##create new data frame from applying a filter
 ##that checks if cols are numeric to the dataset
-iris_only_integers.data <- data.frame(Filter(is.numeric, iris))
+iris_only_integers.data = data.frame(Filter(is.numeric, iris))
 
 means = colMeans(iris_only_integers.data)
 
@@ -45,7 +45,7 @@ print(active_beavers)
 
 new = faraway::orings[c(1, 2, 4, 11, 13, 18),]
 
-png(file = "PROBLEM3plot1.png")
+png(file = "Part1/PROBLEM3plot1.png")
 plot(x = new[,1],y = new[,2],
      xlab = "No incidents",
      ylab = "Temperature",
@@ -55,7 +55,7 @@ plot(x = new[,1],y = new[,2],
 )
 dev.off()
 
-png(file = "PROBLEM3plot2.png")
+png(file = "Part1/PROBLEM3plot2.png")
 plot(x = faraway::orings[,1],y = faraway::orings[,2],
      xlab = "No incidents",
      ylab = "Temperature",
@@ -137,12 +137,12 @@ sapply(seq_along(proportions),function(index) {
 
 ##SOCSUPPORT -PROBLEM 5
 
-png(file = "PROBLEM5plot1.png")
+png(file = "Part1/PROBLEM5plot1.png")
 plot(BDI~age, data=DAAG::socsupport)
 
 dev.off()
 
-png(file = "PROBLEM5plot2.png")
+png(file = "Part1/PROBLEM5plot2.png")
 plot(BDI~unclass(age), data=DAAG::socsupport)
 
 first  = nrow(subset(DAAG::socsupport,age == "18-20"))

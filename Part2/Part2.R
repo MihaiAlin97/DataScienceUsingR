@@ -237,6 +237,8 @@ print(system.time(table(dieRollsChar)))
 print(system.time(dump("dieRolls", "Part2/dieRolls.R")))
 print(system.time(dump("dieRollsFactor", "Part2/dieRollsFactor.R")))
 print(system.time(dump("dieRollsChar", "Part2/dieRollsChar.R")))
+##the file in which we dumped the vector is the smallest and the char vec is the largest
+
 ##PROBLEM5 - Advantages of factors over numeric and char vectors
 
 
