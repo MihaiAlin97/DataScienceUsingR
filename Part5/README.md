@@ -11,7 +11,7 @@ and on the original scale.<br>
 **(b)** Construct a normal QQ plot, and compare the result with the plots in
 Figure 3.13; which one is most similar, and what does this tell you
 about this data set?<br>
-![Fig. 3.13](Figure1.png)
+![Fig. 3.13](Figure1.PNG)<br>
 **(c)** Construct a boxplot for these data on the log scale as well as the
 original scale.<br>
 **(d)** Construct a dot chart of the areas. Is a log transformation needed
@@ -27,11 +27,9 @@ information about this data frame.)<br>
 nonlinear?<br>
 **(b)** Use the ```pairs()``` function to obtain all pairwise ```scatterplots``` among
 the four variables. Identify pairs of variables where there might be
-linear or nonlinear relationships.
-
+linear or nonlinear relationships.<br>
 
 3. Consider the ```pressure``` data frame. There are two columns – temperature and pressure.<br>
-
 **(a)** Construct a ```scatterplot``` with pressure on the vertical axis and
 temperature on the horizontal axis. Are the variables related linearly or nonlinearly? <br>
 **(b)** The graph of the following function passes through the plotted points
@@ -43,32 +41,29 @@ to calculate them:<br><br>
 ```residuals <- with(pressure, pressure -(0.168 + 0.007*temperature)ˆ(20/3))``` <br><br>
 Construct a normal QQ plot of these residuals and decide whether
 they are normally distributed or whether they follow a skewed
-distribution.
-<br>
-**(c)** Now, apply the power transformation y<sup>3/20</sup> to the pressure data values. Plot these transformed values against temperature. Is a linear or
-nonlinear relationship evident now?
-<br>
+distribution.<br>
+**(c)** Now, apply the power transformation y<sup>3/20</sup> to the pressure data values. Plot these transformed values against temperature. Is a linear or nonlinear relationship evident now?<br>
 **(d)** Calculate residuals for the difference between transformed pressure
 values and those predicted by the straight line. Obtain a normal QQ
 plot, and decide whether the residuals follow a normal distribution
 or not.
 ## Exercices for sections 3.2 & 3.3</h1>
-<br>4. Write code that produces the figure in the right panel of Figure 3.15. Add
+4. Write code that produces the figure in the right panel of Figure 3.15. Add
 an appropriate legend to the bottom right corner of the plot.
-![Fig. 3.15](Figure2.png)
+![Fig. 3.15](Figure2.PNG)<br>
 
-<br>5. Obtain an analogous set of plots to those displayed in Figure 3.18,
+5. Obtain an analogous set of plots to those displayed in Figure 3.18,
 but with enough room for the respective titles: “Histogram-Sturges,”
 “Histogram-FD,” “Density Estimate,” “Boxplot,” “QQ Plot,” and “Trace
 Plot.”
-![Fig. 3.18](Figure3.png)
+![Fig. 3.18](Figure3.PNG)<br>
 
-<br>6. Re-do the plots of Figure 3.18, but this time apply the six graphics functions to a variable X which is defined by X = Z<sup>2</sup>, where Z is a simulated
+6. Re-do the plots of Figure 3.18, but this time apply the six graphics functions to a variable X which is defined by X = Z<sup>2</sup>, where Z is a simulated
 standard normal random variable as in the example. Comment on the
 changes that you see in the plots. (The variable X is an example of a
 chi-squared random variable on one degree of freedom.)
 
-<br>7. Refer to the previous question. Construct another set of six plots as in
+7. Refer to the previous question. Construct another set of six plots as in
 Figure 3.18, but this time applied to the data in EuStockMarkets. (i.e.
 apply the code of Figure 3.18 to Z, where ```Z <- EuStockMarkets```).
 Comment on the results, and use the ```summary()``` function to gain further
