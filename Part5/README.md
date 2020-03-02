@@ -1,7 +1,8 @@
 
 # Data analysys using R - Part 5
 <h5>Read section 3.1 page 50, from the book W. J. Braun, D. J. Murdoch, A First Course in
-Statistical Programming with R, second edition, Cambridge University Press, 2016, and do exercises 1-3 page 61. Continue with sections 3.2 and 3.3 and do exercises 1-4 page 70.</h5>
+Statistical Programming with R, second edition, Cambridge University Press, 2016, and do exercises 1-3 page 61. Continue with sections 3.2 and 3.3 and do exercises 1-4 page 70.</h5><br>
+
 ## Exercices for section 3.1
 1.  Consider the ```islands``` vector.<br>
 **(a)** Compare the histograms that result when using breaks based on
@@ -29,8 +30,8 @@ the four variables. Identify pairs of variables where there might be
 linear or nonlinear relationships.
 
 
-3. Consider the ```pressure``` data frame. There are two columns –
-temperature and pressure.<br>
+3. Consider the ```pressure``` data frame. There are two columns – temperature and pressure.<br>
+
 **(a)** Construct a ```scatterplot``` with pressure on the vertical axis and
 temperature on the horizontal axis. Are the variables related linearly or nonlinearly? <br>
 **(b)** The graph of the following function passes through the plotted points
@@ -39,8 +40,7 @@ y = (0.168 + 0.007x)<sup>20/3</sup><br>
 The differences between the pressure values predicted by the curve
 and the observed pressure values are called *residuals*. Here is a way
 to calculate them:<br><br>
-```residuals <- with(pressure, pressure -
-(0.168 + 0.007*temperature)ˆ(20/3))```<br><br>
+```residuals <- with(pressure, pressure -(0.168 + 0.007*temperature)ˆ(20/3))``` <br><br>
 Construct a normal QQ plot of these residuals and decide whether
 they are normally distributed or whether they follow a skewed
 distribution.
